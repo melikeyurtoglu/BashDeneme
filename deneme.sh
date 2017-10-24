@@ -17,7 +17,7 @@ dpkg-query -l apache2
 
 echo "kurulum yapmak ister misiniz?(E\H)"
 read yanit
-if [ $yanit = "E" ]
+if[$yanit = "E"]
     then
       apt-get install apache2
     else
