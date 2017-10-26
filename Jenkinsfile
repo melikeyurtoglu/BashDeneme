@@ -3,9 +3,8 @@ pipeline {
     stages {
         stage('Test') {
             steps {
-                sh 'ant compile'
-                sh 'ant run'
-            }
+                sh '''ant compile'''
+	    }
         }
     }
 }
